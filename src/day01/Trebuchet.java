@@ -1,14 +1,11 @@
 package day01;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import utils.Advent;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Trebuchet {
-    private static final Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
-
     static int partOne(ArrayList<String> inp) {
         int sum = 0;
         String numbersOnly;
@@ -70,11 +67,7 @@ public class Trebuchet {
     }
 
     public static void main(String[] args) {
-        ArrayList<String> input = new ArrayList<>();
-
-        while (in.hasNext()) {
-            input.add(in.nextLine());
-        }
+        ArrayList<String> input = Advent.readInput();
 
         System.out.println(partOne(input));
         System.out.println(partTwo(input));
