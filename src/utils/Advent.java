@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Advent {
-    private static final Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+    public static final Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
 
     public static ArrayList<String> readInput() {
         ArrayList<String> input = new ArrayList<>();
