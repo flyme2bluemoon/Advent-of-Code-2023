@@ -67,7 +67,7 @@ public class HauntedWasteland {
             if (start.id.equals("AAA")) System.out.println(steps.getLast());
         }
 
-        BigInteger lcm = BigInteger.valueOf(steps.get(0));
+        BigInteger lcm = BigInteger.valueOf(steps.getFirst());
 
         for (int i = 1; i < steps.size(); i++) {
             BigInteger bi = BigInteger.valueOf(steps.get(i));
