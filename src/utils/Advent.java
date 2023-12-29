@@ -18,14 +18,18 @@ public class Advent {
         return input;
     }
 
-    public static char[][] readInputCharArray() {
-        ArrayList<String> input = readInput();
-
-        char[][] arr = new char[input.size()][];
-        for (int i = 0; i < input.size(); i++) {
-            arr[i] = input.get(i).toCharArray();
+    public static char[][] strArrayListToString(ArrayList<String> arrayList) {
+        char[][] arr = new char[arrayList.size()][];
+        for (int i = 0; i < arrayList.size(); i++) {
+            arr[i] = arrayList.get(i).toCharArray();
         }
 
         return arr;
+    }
+
+    public static char[][] readInputCharArray() {
+        ArrayList<String> input = readInput();
+
+        return strArrayListToString(input);
     }
 }
